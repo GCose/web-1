@@ -124,6 +124,7 @@ function updateUserItemStyle(userId) {
             star.style.marginLeft = 'auto';
             star.style.color = '#ffcc33';
             star.style.fontSize = '14px';
+            
             item.appendChild(star);
         } else if (!isFavorite && starIcon) {
             item.removeChild(starIcon);

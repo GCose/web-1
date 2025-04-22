@@ -187,10 +187,10 @@ main {
 
 /* User List */
 .user-list-container {
-    border-right: 1px solid var(--border-color);
     display: flex;
     flex-direction: column;
     background-color: var(--bg-tertiary);
+    border-right: 1px solid var(--border-color);
 }
 
 @media (max-width: 900px) {
@@ -242,7 +242,7 @@ main {
 }
 
 .user-item {
-    padding: 14px;
+    padding: 2rem 0.5rem;
     border-radius: 10px;
     background-color: var(--bg-secondary);
     transition: all var(--transition-medium);
