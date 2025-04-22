@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 2 | User Profiles</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="theme-toggle">
+        <input type="checkbox" id="theme-switch" class="theme-switch" />
+        <label for="theme-switch" class="toggle-label">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+          <span class="toggle-ball"></span>
+        </label>
+      </div>
+
+      <header>
+        <div class="logo">
+          <div class="logo-circle"></div>
+          <h1>Nexus<span>Profiles</span></h1>
+        </div>
+        <p class="tagline">Interactive User Profile Explorer</p>
+      </header>
+
+      <main>
+        <div class="card profile-container">
+          <div class="user-list-container">
+            <div class="section-header">
+              <h2>Directory</h2>
+              <div class="search-container">
+                <input
+                  type="text"
+                  id="userSearch"
+                  placeholder="Search users..."
+                />
+                <i class="fas fa-search"></i>
+              </div>
+            </div>
+            <div id="userList" class="user-list"></div>
+          </div>
+
+          <div class="user-details-container">
+            <div class="section-header">
+              <h2>Profile Details</h2>
+              <div id="actionButtons" class="action-buttons hidden">
+                <button class="action-button" id="contactButton">
+                  <i class="fas fa-envelope"></i>
+                  <span>Contact</span>
+                </button>
+                <button class="action-button" id="favoriteButton">
+                  <i class="far fa-star"></i>
+                  <span>Favorite</span>
+                </button>
+              </div>
+            </div>
+            <div id="userDetails" class="user-details">
+              <div class="empty-state">
+                <div class="empty-icon">
+                  <i class="fas fa-user-circle"></i>
+                </div>
+                <p>Select a user to view their profile</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <div id="toastContainer" class="toast-container"></div>
+    </div>
+
+    <div class="particles-container">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
